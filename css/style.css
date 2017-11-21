@@ -67,7 +67,7 @@ a:focus{
 	text-decoration: none;
 }
 #home{
-	background: url(../img/home.JPG) rotate90;
+	background: url(../img/home.JPG);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -76,6 +76,10 @@ a:focus{
 	min-height: 710px;	
 	padding-top: 60px;
 	color: #ffffff;
+}
+.home-img{
+    rotate: 90;
+
 }
 
 #home.overlay {
