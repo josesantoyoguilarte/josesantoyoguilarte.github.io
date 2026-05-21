@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jose Arturo Santoyo Guilarte - Resume</title>
+<style>
+  :root {
+    --text: #1d2433;
+    --muted: #5b6478;
+    --accent: #0d6efd;
+    --border: #e6e8ee;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; color: var(--text); font-family: "Inter", "Segoe UI", Arial, sans-serif; font-size: 10.5pt; line-height: 1.4; background: #f3f4f6; }
+  .page {
+    background: #fff;
+    max-width: 8.5in;
+    margin: 0.4in auto;
+    padding: 0.55in 0.7in;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  h1 { font-size: 22pt; margin: 0 0 2px; letter-spacing: -0.01em; }
+  h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); border-bottom: 1.5px solid var(--accent); padding-bottom: 3px; margin: 18px 0 8px; }
+  h3 { font-size: 11pt; margin: 10px 0 2px; }
+  p  { margin: 2px 0; }
+  ul { margin: 4px 0 6px 18px; padding: 0; }
+  li { margin: 1px 0; }
+  a  { color: var(--accent); text-decoration: none; }
+  .subtitle { color: var(--muted); font-size: 10pt; }
+  .role-line { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+  .role-line .when { color: var(--muted); font-size: 9.5pt; white-space: nowrap; }
+  .company { color: var(--muted); font-style: italic; font-size: 10pt; margin-bottom: 4px; }
+  .header { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; border-bottom: 2px solid var(--text); padding-bottom: 10px; }
+  .contact { text-align: right; font-size: 9.5pt; color: var(--muted); line-height: 1.5; }
+  .contact a { color: var(--text); }
+  .summary { margin-top: 8px; }
+  .skills-grid { display: grid; grid-template-columns: 160px 1fr; gap: 4px 12px; font-size: 10pt; }
+  .skills-grid dt { font-weight: 600; color: var(--text); }
+  .skills-grid dd { margin: 0; color: var(--muted); }
+  .tag { display: inline-block; font-size: 8.5pt; padding: 1px 7px; border: 1px solid var(--border); border-radius: 3px; color: var(--muted); margin: 1px 2px 1px 0; }
+  .featured {
+    border-left: 3px solid var(--accent);
+    background: #f7faff;
+    padding: 8px 12px;
+    margin: 6px 0 4px;
+  }
+  .featured .label { font-size: 8.5pt; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 600; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  @media print {
+    html, body { background: #fff; font-size: 10pt; }
+    .page { box-shadow: none; margin: 0; padding: 0.4in 0.55in; max-width: none; }
+    a { color: var(--text); }
+    .no-print { display: none !important; }
+  }
+  .print-bar {
+    position: sticky; top: 0; background: #0d6efd; color: #fff; padding: 10px 16px;
+    text-align: center; font-family: inherit; z-index: 10;
+  }
+  .print-bar button {
+    background: #fff; color: #0d6efd; border: 0; font-weight: 600;
+    padding: 6px 14px; border-radius: 4px; cursor: pointer; margin-left: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="print-bar no-print">
+  This is your print-ready resume.
+  <button onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<div class="page">
+
+  <header class="header">
+    <div>
+      <h1>Jose Arturo Santoyo Guilarte</h1>
+      <p class="subtitle">Intermediate Systems Developer / Integrator</p>
+    </div>
+    <div class="contact">
+      Ottawa / Gatineau, Canada<br>
+      <a href="mailto:jarturo301286@gmail.com">jarturo301286@gmail.com</a><br>
+      <a href="https://josesantoyoguilarte.github.io">josesantoyoguilarte.github.io</a><br>
+      <a href="https://www.linkedin.com/in/jose-arturo-santoyo-guilarte-7a3ba466">linkedin.com/in/jose-arturo-santoyo-guilarte</a><br>
+      <a href="https://github.com/josesantoyoguilarte">github.com/josesantoyoguilarte</a>
+    </div>
+  </header>
+
+  <p class="summary">
+    Computer Systems Engineer with 7+ years of experience across full-stack development,
+    DevOps, and QA automation. Currently modernizing legacy .NET line-of-business
+    applications to ASP.NET Core 8 on Azure Kubernetes Service for the City of Ottawa.
+    Comfortable across the stack &mdash; from C# / Oracle and CI/CD pipelines to Python
+    audio DSP &mdash; with a strong bias toward automation, clean architecture, and
+    reliable delivery.
+  </p>
+
+  <h2>Skills</h2>
+  <dl class="skills-grid">
+    <dt>Languages</dt>           <dd>C#, JavaScript, Python, T-SQL, PL/SQL, PowerShell, Bash, HTML, CSS</dd>
+    <dt>Frameworks</dt>          <dd>ASP.NET Core 8, ASP.NET MVC, Razor Pages, ASP.NET WebForms, Bootstrap</dd>
+    <dt>Cloud &amp; DevOps</dt>  <dd>Azure (AKS, Azure AD / OIDC), Azure DevOps Pipelines, Docker, Kubernetes, CI/CD, Git</dd>
+    <dt>Data</dt>                <dd>Oracle, SQL Server, Redis</dd>
+    <dt>QA / Testing</dt>        <dd>Selenium WebDriver, Protractor, BDD</dd>
+    <dt>Audio / AI</dt>          <dd>NAudio, librosa, Demucs, WaveSurfer.js</dd>
+    <dt>Spoken languages</dt>    <dd>Spanish (native), English (fluent), French (working)</dd>
+  </dl>
+
+  <h2>Experience</h2>
+
+  <div class="role-line">
+    <h3>Intermediate Systems Developer / Integrator</h3>
+    <span class="when">Apr 2021 &ndash; Present</span>
+  </div>
+  <p class="company">City of Ottawa &middot; Contract, Full-time &middot; Ottawa, ON</p>
+  <ul>
+    <li>Enhance and automate business tasks by analyzing, designing, and implementing scripts, small programs, and database components.</li>
+    <li>Identify and prepare functional specifications in collaboration with clients, vendors, and other ITS staff.</li>
+    <li>Manage source code with standard SCM tools; write technical specifications and test scripts.</li>
+    <li>Perform preventive maintenance by developing in-house upgrades and applying vendor-supplied patches.</li>
+    <li>Modify applications and components to ensure continued operations across environments.</li>
+  </ul>
+
+  <div class="featured">
+    <p class="label">Featured project</p>
+    <p style="margin:2px 0 4px;"><strong>Legacy .NET Modernization &rarr; Azure Kubernetes</strong></p>
+    <p>Led the modernization of a 15+ year old ASP.NET WebForms line-of-business application to a cloud-ready ASP.NET Core 8 solution deployed to Azure Kubernetes Service.</p>
+    <ul>
+      <li>Re-implemented the legacy app on .NET 8 with a clean layered architecture (Web / Data projects, repository pattern, strongly-typed view models).</li>
+      <li>Replaced commercial WebForms UI components with open-source equivalents (FullCalendar.js, Bootstrap), eliminating per-developer licensing costs.</li>
+      <li>Integrated Azure AD / OpenID Connect with a database-driven role allowlist and per-session active-role enforcement.</li>
+      <li>Containerized the app (multi-stage Dockerfile, non-root runtime) and authored Kubernetes manifests (base + Dev/QA overlays) with health probes, resource limits, and TLS ingress.</li>
+      <li>Built an Azure DevOps YAML pipeline for automated build and multi-environment delivery (Dev &rarr; QA).</li>
+    </ul>
+    <div>
+      <span class="tag">C# / .NET 8</span><span class="tag">ASP.NET Core</span><span class="tag">Oracle</span><span class="tag">Azure AD / OIDC</span><span class="tag">Docker</span><span class="tag">Kubernetes (AKS)</span><span class="tag">Azure DevOps</span><span class="tag">FullCalendar</span><span class="tag">Bootstrap</span>
+    </div>
+  </div>
+
+  <div class="role-line" style="margin-top:14px;">
+    <h3>DevOps Specialist</h3>
+    <span class="when">Jun 2018 &ndash; May 2020</span>
+  </div>
+  <p class="company">Inteloom Incorporated</p>
+  <ul>
+    <li>Maintained and improved automation tooling, and advised on QA best practices.</li>
+    <li>Built automated deployments using configuration management and CI/CD practices.</li>
+    <li>Prepared modules for production with release procedures and knowledge-transfer documentation.</li>
+    <li>Deployed new modules, upgrades, and fixes to production; handled routine application maintenance and troubleshooting.</li>
+  </ul>
+
+  <div class="role-line">
+    <h3>Quality Assurance Engineer</h3>
+    <span class="when">Jun 2017 &ndash; Jun 2018</span>
+  </div>
+  <p class="company">Inteloom Incorporated</p>
+  <ul>
+    <li>Participated in the QA process across Inteloom projects; built and maintained automated test suites using Selenium WebDriver and Protractor, applying behavior-driven development concepts.</li>
+  </ul>
+
+  <div class="role-line">
+    <h3>Web Developer &amp; Business Analyst</h3>
+    <span class="when">Feb 2017 &ndash; Oct 2017</span>
+  </div>
+  <p class="company">The Handmade Bride</p>
+  <ul>
+    <li>Designed and developed the company's e-commerce site; handled regular updates and maintenance of the business website and online store.</li>
+  </ul>
+
+  <h2>Selected Personal Projects</h2>
+
+  <div class="featured">
+    <p style="margin:2px 0 4px;"><strong>MixReady</strong> &mdash; ASP.NET Core 8 web app that turns any song into a DJ-ready track.</p>
+    <p>Hybrid C# (NAudio) + Python (librosa, Demucs) pipeline detects BPM, key, and song structure, separates stems, and synthesizes beat-aligned intros that crossfade smoothly into the original mix.</p>
+    <ul>
+      <li>Interactive WaveSurfer.js waveform UI &mdash; click to pick extraction and song-start points, snapped server-side to the beat grid.</li>
+      <li>AI stem separation with per-stem intro selection; auto-detection of BPM, key, and genre on upload.</li>
+      <li>Resilient pipeline &mdash; every Python-powered feature has a pure-C# fallback for graceful degradation.</li>
+      <li>Redis-backed track metadata and async job state; containerized with Docker / docker-compose.</li>
+    </ul>
+    <div>
+      <span class="tag">C# / .NET 8</span><span class="tag">ASP.NET Core</span><span class="tag">Razor Pages</span><span class="tag">NAudio</span><span class="tag">Python</span><span class="tag">librosa</span><span class="tag">Demucs</span><span class="tag">Redis</span><span class="tag">Docker</span><span class="tag">WaveSurfer.js</span>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:8px;">
+    <div>
+      <p style="margin:4px 0 0;"><strong>Medical Glossary App</strong></p>
+      <p class="subtitle">Cross-platform mobile glossary for medical terminology.</p>
+    </div>
+    <div>
+      <p style="margin:4px 0 0;"><strong>Liquid Flow Meter</strong></p>
+      <p class="subtitle">Embedded project: sensor + microcontroller with real-time data output.</p>
+    </div>
+    <div>
+      <p style="margin:4px 0 0;"><strong>Elevator System (Rational Rose)</strong></p>
+      <p class="subtitle">Real-time elevator system modelled in IBM Rational Rose RealTime using UML state machines.</p>
+    </div>
+  </div>
+
+  <h2>Education</h2>
+  <div class="role-line">
+    <h3>B.Eng. in Computer Systems Engineering</h3>
+    <span class="when">2011 &ndash; 2017</span>
+  </div>
+  <p class="company">Carleton University &middot; Department of Systems and Computer Engineering &middot; Ottawa, ON</p>
+
+  <h2>Volunteering &amp; Teaching</h2>
+  <ul>
+    <li><strong>VP External Affairs &mdash; H.O.L.A.S., Carleton University</strong> (Sep 2014 &ndash; Apr 2015): coordinated communication with partner organizations, organized fundraising events for humanitarian programs in Latin America, and managed the H.O.L.A.S. website and social media.</li>
+    <li><strong>Spanish Teaching Assistant &mdash; Carleton University</strong> (Sep 2013 &ndash; Mar 2014): taught Spanish in individual and group format, facilitated oral/writing practice, and marked assignments.</li>
+    <li><strong>Sub-Coordinator &mdash; Inspira Youth Leadership Conference</strong> (2016): managed executive team, logistics, and resources for the volunteer staff.</li>
+    <li><strong>Instructor &mdash; Virtual Ventures</strong> (2013): assisted younger students in computer and robotics workshops.</li>
+  </ul>
+
+</div>
+</body>
+</html>
